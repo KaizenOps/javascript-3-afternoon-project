@@ -50,7 +50,16 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for(var i=0; i<employees.length; i++){
+    if(employees[i].firstName === 'Theo'){
+      employees.splice(i,1)
+    }
+    if(employees[i].firstName === 'Lorie'){
+      employees[i].department = 'HR'
+    }}
+      return employees;
+  }
 
 
 
@@ -69,6 +78,10 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+
+function removeDuplicates(arr) {
+  return arr.filter((item,index) => index === arr.indexOf(item))
+}
 
 
 
@@ -97,8 +110,10 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+let grumpyActivity = cat.catFriends[0].activities[1];
+let fluffy2ndFriend = cat.catFriends[1].name;
+
+
 
 
 
@@ -138,7 +153,13 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+function recordCleaner(){
+  for(accidents in myCar){
+   for(var i = 0; i < myCar.accidents.length; i++){
+     myCar.accidents.atFaultForAccident = false;
+   }
+  }
+}
 
 
 

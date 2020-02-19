@@ -113,17 +113,16 @@ function largeNumbers( {first, second, third} ) {
   Find the longest array and return that array.
 */
 
-// function numberGroups( {a, b, c} ) {
-//   let
-//   let longest = [];
+function numberGroups( {a, b, c} ) {
+  let max = Math.max(a.length, b.length, c.length)
+  if(max === a.length){
+    return a;
+  }
+  if(max === b.length){
+    return b;
+  }
+  else {
+    return c;
+  }
 
-//   arrays.forEach( (array, index ) => {
-//     if (array.length > longest.length) {
-//       longest.push(arrays[index]);
-//   }
-// })
-
-//   return longest;
-
-
-// }
+}
